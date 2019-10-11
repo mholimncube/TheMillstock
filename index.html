@@ -1,24 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <meta http-equiv="X-UA-Compatable" content="ie=edge">
-        <title>The Milkstock Student Accommodation</title>
-        <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Carousel Gallery Slider</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
-        <slider>
-            <slide><p>Bedroom</p></slide>
-            <slide><p>Bedroom</p></slide>
-            <slide><p>Kitchen</p></slide>
-            <slide><p>Passage</p></slide>
-            <slide><p>Common Area</p></slide>
-            <slide><p>Common Area</p></slide>
-            <slide><p>Lobby</p></slide>
-            <slide><p>Outside</p></slide>
-        </slider>
+<div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="imageHolder">
+            <img src="images/1.jpeg">1366X768
+            <p class="captionText">Outside</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/2.jpeg">
+            <p class="captionText">Lobby</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/3.jpeg">
+            <p class="captionText">Common Area</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/4.jpeg">
+            <p class="captionText">Common Area</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/5.jpeg">
+            <p class="captionText">Passage</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/6.jpeg">
+            <p class="captionText">Bedroom</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/7.jpeg">
+            <p class="captionText">Kitchen</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/8.jpeg">
+            <p class="captionText">Bedroom</p>
+        </div>
+    </div>
+    <div id="dotsContainer"></div>
+</div>
+<script src="myScript.js"></script>
 </body>
-
 </html>
